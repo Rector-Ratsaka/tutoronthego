@@ -1,0 +1,176 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    min-height: 100vh;
+    position: relative;
+    padding-bottom: 60px;
+}
+
+/* Header styles */
+header {
+    width: 100%;
+    background-color: #2e4f70;
+    color: #ecf0f1;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.welcome {
+    font-size: 2em;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.slogan {
+    font-size: 1em;
+    color: #FFD700;
+    font-style: italic;
+}
+
+.slogan p {
+    margin: 0;
+}
+
+/* Navigation styles */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: all 0.3s ease;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+}
+
+.nav-links a:hover {
+    color: #FFD700;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Main content styles */
+.container {
+    max-width: 1200px;
+    margin: 4rem auto;
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem; /* Adds consistent spacing between containers */
+}
+
+.tutor-info {
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    margin: 0; /* Remove margin since we're using gap */
+}
+
+.tutor-info:hover {
+    transform: translateY(-5px);
+}
+
+.tutor-info h2 {
+    color: #2e4f70;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #FFD700;
+    padding-bottom: 0.5rem;
+}
+
+.tutor-info ul {
+    list-style-position: inside;
+    padding-left: 1rem;
+}
+
+.tutor-info li {
+    margin-bottom: 0.8rem;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.tutor-info li::before {
+    content: "•";
+    color: #2e4f70;
+    position: absolute;
+    left: 0;
+}
+
+
+
+/* Footer styles */
+footer {
+    background-color: #2e4f70;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .nav-links {
+        margin-top: 1rem;
+        gap: 1rem;
+    }
+
+    .welcome {
+        font-size: 1.5em;
+    }
+
+    .container {
+        padding: 1rem;
+        gap: 2rem; /* Slightly reduced gap for mobile */
+    }
+
+    .tutor-info {
+        padding: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links li {
+        margin: 0.5rem 0;
+    }
+}
