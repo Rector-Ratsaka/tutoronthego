@@ -16,8 +16,7 @@ section {
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-image: url('bg.jpg');
-
+    background-image: url('back.jpeg');
     min-height: 100vh;
     position: relative;
     padding-bottom: 60px;
