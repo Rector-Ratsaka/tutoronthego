@@ -1,3 +1,10 @@
+
+html {
+    scroll-behavior: smooth;
+}
+section {
+    scroll-margin-top: 80px; /* Adjust based on header height */
+}
 /* Reset and base styles */
 * {
     margin: 0;
@@ -200,7 +207,7 @@ footer {
 }
 
 .image-o img {
-    max-width: 50%; /* Increase size */
+    max-width: 110%; /* Increase size */
     height: auto;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
