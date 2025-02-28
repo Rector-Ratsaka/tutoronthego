@@ -31,7 +31,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
-    
+
     top: 0;
     z-index: 1000;
 }
@@ -185,7 +185,7 @@ footer {
 
 @media screen and (max-width: 480px) {
     .nav-links {
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
     }
 
